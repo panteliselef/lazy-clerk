@@ -1,5 +1,4 @@
-import { SignedIn, SignOutButton, UserProfile } from "@clerk/remix";
-
+import { OrganizationProfile, SignedIn, SignOutButton } from '@clerk/remix'
 
 const Main = () => (
   <main className="main">
@@ -9,7 +8,7 @@ const Main = () => (
       alignItems: 'center',
       gap: '2rem'
     }}>
-      <UserProfile path="/user" routing="path" />
+      <OrganizationProfile routing='path' path='/organizations' />
       <SignedIn>
         <SignOutButton />
       </SignedIn>
@@ -27,7 +26,7 @@ const Footer = () => (
   </footer>
 );
 
-export default function UserProfilePage() {
+export default function OrganizationProfilePage() {
   return (
     <div className="container">
       <Main />

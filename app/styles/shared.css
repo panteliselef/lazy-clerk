@@ -68,7 +68,7 @@ a {
 }
 
 .main {
-    max-width: 540px;
+    max-width: 840px;
     padding-top: 2rem;
     flex: 1;
     text-align: center;
@@ -107,6 +107,9 @@ a {
 .description {
     margin-top: 0.5rem;
     color: #808080;
+    max-width: 450px;
+    line-height: 1.4;
+    margin-inline: auto;
 }
 
 .title,
@@ -124,6 +127,8 @@ a {
 
 .cards {
     margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .card {
@@ -239,6 +244,12 @@ pre {
     -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .25);
 
+}
+
+@media screen and (min-width: 586px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 768px) {

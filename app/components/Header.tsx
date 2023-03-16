@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, UserButton } from "@clerk/remix";
+import { SignedIn, UserButton, OrganizationSwitcher } from "@clerk/remix";
 import { Link } from "@remix-run/react";
 
 // Header component using <SignedIn> & <SignedOut>.
@@ -16,10 +16,8 @@ const Header = () => (
       </Link>
     </div>
     <div className="right">
-      <SignedOut>
-        <Link to="/sign-in">Sign in</Link>
-      </SignedOut>
       <SignedIn>
+        <OrganizationSwitcher />
         <UserButton userProfileUrl="/user" afterSignOutUrl="/" />
       </SignedIn>
     </div>

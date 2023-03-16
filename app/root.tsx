@@ -6,7 +6,7 @@ import styles from "~/styles/shared.css";
 import Header from "~/components/Header";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Lazy Clerk Remix" };
 };
 
 export function links() {
