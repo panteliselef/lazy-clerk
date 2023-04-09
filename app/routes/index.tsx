@@ -110,7 +110,7 @@ const Main = () => (
 
         <div className="card">
           <SignupLink />
-          <SignUpButton mode="modal">
+          <SignUpButton mode="modal" redirectUrl="/">
             <button className="btn">
               Sign up with modal
             </button>
